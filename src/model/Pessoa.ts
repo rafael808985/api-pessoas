@@ -1,7 +1,8 @@
 export class Pessoa {
 private nome: string;
 private cpf: string;
-private data_nascimento: Date;private telefone: string;
+private data_nascimento: Date;
+private telefone: string;
 private endereco: string;
 private altura: number;
 private peso: number;
@@ -111,6 +112,10 @@ console.log(`${this.nome} está andando`)
 
 public andarRapido(_rapido: number) {
 console.log(`${this.nome} anda: ${_rapido}`);
+}
+
+cadastroPessoa(PSM: Pessoa) {
+   console.log(`${PSM.nome} cadastrado com sucesso`);
 }
     
 }

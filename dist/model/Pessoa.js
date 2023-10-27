@@ -12,16 +12,16 @@ class Pessoa {
         this.peso = _peso;
     }
     /**
-     *
-     * @returns
-     */
+    *
+    * @returns
+    */
     getNome() {
         return this.nome;
     }
     /**
-     *
-     * @param _nome
-     */
+    *
+    * @param _nome
+    */
     setNome(_nome) {
         this.nome = _nome;
     }
@@ -87,6 +87,9 @@ Peso: ${this.peso}`);
     }
     andarRapido(_rapido) {
         console.log(`${this.nome} anda: ${_rapido}`);
+    }
+    cadastroPessoa(PSM) {
+        console.log(`${PSM.nome} cadastrado com sucesso`);
     }
 }
 exports.Pessoa = Pessoa;
